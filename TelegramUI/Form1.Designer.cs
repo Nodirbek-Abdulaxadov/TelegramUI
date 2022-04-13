@@ -128,7 +128,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(395, 761);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label13
             // 
@@ -385,7 +384,6 @@
             this.label2.Size = new System.Drawing.Size(64, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Hi, there!";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -398,6 +396,7 @@
             this.label1.Size = new System.Drawing.Size(154, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "Saved Messages";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox2
             // 
@@ -420,6 +419,7 @@
             this.button1.Size = new System.Drawing.Size(395, 63);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
@@ -454,6 +454,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel2
             // 
@@ -480,7 +481,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(378, 48);
             this.panel6.TabIndex = 2;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // pictureBox13
             // 
@@ -540,6 +540,7 @@
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 30;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
             // 
             // pictureBox11
             // 
@@ -641,8 +642,6 @@
             this.Controls.Add(this.panel1);
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
